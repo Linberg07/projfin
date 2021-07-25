@@ -1,0 +1,100 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-size: inherit;
+}
+
+p{
+    margin: 0;
+    font-size: inherit;
+}
+
+body{
+    @extend %ptSans-regular;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black-text;
+}
+
+.title{
+    @extend %ptSans-bold;
+    font-size: 42px;
+    line-height: 56px;
+    color: $title-color;
+    text-align: center;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+main{
+    overflow-x: hidden;
+    background-image: url('../images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ol{
+    list-style: none;
+    counter-reset: counter;
+}
+ol li{
+    counter-increment: counter;
+}
+ol li::before{
+    content: "0" counter(counter);
+    display: block;
+    font-weight: 700;
+    @extend %ptSans-bold;
+    font-size: 50px;
+    line-height: 66px;
+    color: #FFD234;
+    margin-bottom: 32px;
+    transition: all .3s;
+}
+ol li:hover:before{
+    color: #FFFFFF;
+}
+
+// delete arrows
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

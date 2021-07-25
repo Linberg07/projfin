@@ -1,0 +1,38 @@
+$title-color: #262626;
+$black-text: #000000;
+$white-text: #FFFFFF;
+$yelow: #FFF500;
+$yelow-hover: #FFD234;
+
+// $main-background: #E5E5E5;
+$footer-background: #F2F2F2;
+
+%raleway-extra-bold{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+%raleway-bold{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+%rubik-medium{
+    font-family: 'Rubiky', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-bold{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+%ptSans-regular{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+%ptSans-bold{
+    font-family: 'PT Sans';
+    font-weight: 700;
+}
